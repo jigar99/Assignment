@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "32d0ad91-94a5-4d93-acaf-898a8d244e41",
+		"name": "HealthApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5001/items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patientName\": \"Jhon\",\n    \"address\": \"630 bergen ave\",\n    \"hospitalName\": \"Children Hospital\",\n    \"dataOfService\": \"23-01-2023\",\n    \"billAmount\": 10\n\n}"
+				},
+				"url": "http://localhost:5001/items"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/items",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:5001/items"
+			},
+			"response": []
+		}
+	]
+}
